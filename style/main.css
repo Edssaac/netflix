@@ -1,0 +1,146 @@
+:root
+{
+    /* Declarando as variáveis necessárias */
+    --red: #E50914;
+    --black: #141414;
+    --gray: #e5e5e5;
+    --lightgray: #b3b3b3;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo
+{
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a
+{
+    color: var(--gray);
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover
+{
+    color: var(--lightgray);
+}
+
+.filme-principal
+{
+    font-size: 16px;
+    height: 500px;
+
+    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50) 100% ), url('../img/capa-house.jpg');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container
+{
+    width: 70%;
+}
+
+.container
+{
+    margin-left: 20px;
+}
+
+
+.filme-principal .titulo
+{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .descricao
+{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 20x;
+}
+
+.botoes .botao
+{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    font-size: 12px;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botoes .botao:hover
+{
+    color: var(--black);
+    background-color: white;
+}
+
+.botao .button_items
+{
+    display: flex;
+    align-items: center;
+}
+
+.botao i
+{
+    margin-right: 8px;
+    font-size: 21px;
+}
+
+.carrosel-filmes
+{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.carrosel-titulo
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.box-filme
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
