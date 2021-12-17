@@ -1,7 +1,7 @@
 :root
 {
     /* Declarando as variáveis necessárias */
-    --red: #E50914;
+    --red: #ecc819;
     --black: #141414;
     --gray: #e5e5e5;
     --lightgray: #b3b3b3;
@@ -39,7 +39,7 @@ header .logo
 
 header nav a
 {
-    color: var(--gray);
+    color: var(--lightgray);
     text-decoration: none;
     margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +47,15 @@ header nav a
 
 header nav a:hover
 {
-    color: var(--lightgray);
+    color: var(--gray);
+}
+
+.selected
+{
+    color: var(--gray);
+    font-weight: bold;
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 5px;
 }
 
 .filme-principal
@@ -55,7 +63,7 @@ header nav a:hover
     font-size: 16px;
     height: 500px;
 
-    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50) 100% ), url('../img/capa-house.jpg');
+    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50) 100% ), url('../img/capa-shrek.jpg');
     background-size: cover;
 
     display: flex;
@@ -74,7 +82,6 @@ header nav a:hover
     margin-left: 20px;
 }
 
-
 .filme-principal .titulo
 {
     margin-top: 15%;
@@ -87,7 +94,7 @@ header nav a:hover
     margin-top: 10px;
     margin-bottom: 50px;
     text-align: justify;
-    line-height: 20x;
+    line-height: 18px;
 }
 
 .botoes .botao

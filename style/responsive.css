@@ -6,11 +6,14 @@
         flex-direction: column;
         margin-bottom: 10px;
     }
-
+    .botoes
+    {
+        display: flex;
+    }
     .botao
     {
         margin-top: 10px;
-        width: 200px;
+        width: 165px;
     }
 }
 
@@ -20,7 +23,6 @@
     {
         margin-left: 0px;
     }
-
     .carrosel-titulo
     {
         font-size: 16px;
@@ -30,8 +32,54 @@
     {
         border-radius: 0px;
     }
-    
 }
+
+@media screen and (max-width:420px) 
+{
+    .filme-principal
+    {
+        height: 600px;
+    } 
+}
+
+@media screen and (max-width:325px) 
+{
+    .filme-principal
+    {
+        height: 600px;
+    } 
+    .filme-principal .container
+    {
+        width: 85%;
+    }
+    .botoes
+    {
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+@media screen and (max-width:285px) 
+{
+    header .container
+    {
+        margin-left: 0;
+    }
+    header .logo
+    {
+        font-size: 30px;
+    }
+    header nav
+    {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .filme-principal
+    {
+        height: 650px;
+    }
+}
+
 
 @media screen and (min-width:1000px) 
 {
