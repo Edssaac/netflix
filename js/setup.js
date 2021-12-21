@@ -27,20 +27,3 @@ owl.on('mousewheel', '.owl-stage', function (e) {
     }
     e.preventDefault();
 });
-
-function seletor(selected)
-{
-    var links = document.querySelectorAll('nav a');
-
-    for ( link of links )
-    {
-        if ( link.text == selected.text )
-        {
-            link.classList.add('selected')
-        }
-        else
-        {
-            link.classList.remove('selected')
-        }
-    }
-}
