@@ -56,7 +56,8 @@ function atualizarCardPrincipal(infos)
 {
     var titulo = document.querySelector('.titulo');
     var descricao = document.querySelector('.descricao');
-    var path = '../img/banners/'+infos['banner']+'.jpg';
+    // var path = '../img/banners/'+infos['banner']+'.jpg';
+    var path = 'https://edssaac.github.io/netflix/img/banners/'+infos['banner']+'.jpg';
     var principal = document.querySelector('.filme-principal');
     
     titulo.innerHTML = infos['titulo'];
