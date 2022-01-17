@@ -6,4 +6,4 @@ Um simples projeto com o objetivo de recriar a interface da Netflix, usando HTML
 
 Esta versão é uma homenagem ao grande personagem Shrek.
   
-<img src="https://raw.githubusercontent.com/Edssaac/ShrekFlix/main/home.png" >
+<img src="https://raw.githubusercontent.com/Edssaac/ShrekFlix/main/home.png">
