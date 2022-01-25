@@ -36,7 +36,7 @@ function informar()
 function card(image)
 {
     // var requestURL = 'http://127.0.0.1:5500/js/data.json';
-    var requestURL = 'https://edssaac.github.io/netflix/js/data.json';
+    var requestURL = 'https://edssaac.github.io/ShrekFlix/js/data.json';
     var request = new XMLHttpRequest();
 
     request.open('GET', requestURL);
@@ -57,7 +57,7 @@ function atualizarCardPrincipal(infos)
     var titulo = document.querySelector('.titulo');
     var descricao = document.querySelector('.descricao');
     // var path = '../img/banners/'+infos['banner']+'.jpg';
-    var path = 'https://edssaac.github.io/netflix/img/banners/'+infos['banner']+'.jpg';
+    var path = 'https://edssaac.github.io/ShrekFlix/img/banners/'+infos['banner']+'.jpg';
     var principal = document.querySelector('.filme-principal');
     
     titulo.innerHTML = infos['titulo'];
