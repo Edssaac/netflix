@@ -20,9 +20,8 @@ const startOwlCarousel = () => {
     owl.owlCarousel({
         loop: true,
         margin: 10,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 2500,
+        autoplay: false,
+        autoplayTimeout: 5000,
         responsive: {
             0: {
                 items: 1
