@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="src/css/main.css">
 
     <!-- owl css -->
-    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/css/owl/owl.theme.default.min.css">
 
-    <!-- media queries -->
-    <link rel="stylesheet" href="style/responsive.css">
+    <!-- owl js -->
+    <script src="src/js/owl/jquery.min.js" defer></script>
+    <script src="src/js/owl/owl.carousel.min.js" defer></script>
 
-    <link rel="shortcut icon" href="img/shrek_icon.png" type="image/x-icon">
+    <script src="src/js/main.js" defer></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/641b9efb0f.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="src/img/shrek-icon.png" type="image/x-icon">
     <title>shrekflix</title>
 </head>
-<body">
+
+<body>
 
     <header>
         <div class="container">
             <h2 class="logo">SHREKFLIX</h2>
             <nav>
-                <a onclick="seletor(this)" class="selected" href="#">Início</a>
-                <a onclick="seletor(this)" href="#">Séries</a>
-                <a onclick="seletor(this)" href="#">Filmes</a>
-                <a onclick="seletor(this)" href="#">Documentários</a>
+                <a class="selected" href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="filme-principal">
+        <div id="main-movie" class="main-movie">
             <div class="container">
-                <h3 class="titulo">SHREK</h3>
-                <p class="descricao">
-                Em um pântano distante vive Shrek (Mike Myers), um ogro solitário que vê, 
-                sem mais nem menos, sua vida ser invadida por uma série de personagens de 
-                contos de fada, como três ratos cegos, um grande e malvado lobo e ainda três 
-                porcos que não têm um lugar onde morar. Todos eles foram expulsos de seus lares 
-                pelo maligno Lorde Farquaad (John Lithgow). Determinado a recuperar a tranquilidade 
-                de antes, Shrek resolve encontrar Farquaad e com ele faz um acordo: todos os personagens 
-                poderão retornar aos seus lares se ele e seu amigo Burro (Eddie Murphy) resgatarem uma bela 
-                princesa (Cameron Diaz), que é prisioneira de um dragão. Porém, quando Shrek e o Burro enfim 
-                conseguem resgatar a princesa logo eles descobrem que seus problemas estão apenas começando.
-                </p>
-            
-                <div class="botoes">
-                    <button onclick="assistir()" role="button" class="botao">
-                        <div class="button_items">
+                <h3 id="title" class="title"></h3>
+                <p id="description" class="description"></p>
+
+                <div class="buttons">
+                    <button role="button" id="watch-button" class="button">
+                        <div class="button-items">
                             <i class="fas fa-play-circle"></i>
                             ASSISTIR AGORA
                         </div>
                     </button>
-                    <button onclick="informar()" role="button" class="botao">
-                        <div class="button_items">
+                    <button role="button" id="information-button" class="button">
+                        <div class="button-items">
                             <i class="fas fa-info-circle"></i>
                             MAIS INFORMAÇÕES
                         </div>
@@ -65,75 +63,13 @@
         </div>
     </main>
 
-    <div class="carrosel-filmes">
-        <label for="title" class="carrosel-titulo">Em alta</label>
+    <div class="movie-carousel">
+        <label for="title" class="carousel-title">Em alta</label>
+
         <div id="movieBox" class="owl-carousel owl-theme">
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini1.jpg" alt="filme1">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini2.jpg" alt="filme2">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini3.jpg" alt="filme3">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini4.jpg" alt="filme4">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini5.jpg" alt="filme5">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini6.jpg" alt="filme6">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini7.jpg" alt="filme7">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini8.jpg" alt="filme8">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini9.jpg" alt="filme9">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini10.jpg" alt="filme10">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini11.jpg" alt="filme11">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini12.jpg" alt="filme12">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini13.jpg" alt="filme13">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini14.jpg" alt="filme14">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini15.jpg" alt="filme15">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini16.jpg" alt="filme16">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini17.jpg" alt="filme17">
-            </div>
-            <div class="item">
-                <img onclick="card(this)" class="box-filme" src="img/capas/mini18.jpg" alt="filme18">
-            </div>
         </div>
     </div>
 
-    <!-- owl js -->
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-
-    <script src="js/setup.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/641b9efb0f.js" crossorigin="anonymous"></script>
-    
 </body>
+
 </html>

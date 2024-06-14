@@ -1,0 +1,212 @@
+:root {
+    --red: #ecc819;
+    --black: #141414;
+    --white: #ffffff;
+    --gray: #e5e5e5;
+    --lightgray: #b3b3b3;
+    --black-alpha: rgba(0, 0, 0, .50);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    color: var(--lightgray);
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover {
+    color: var(--gray);
+}
+
+.selected {
+    color: var(--gray);
+    font-weight: bold;
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 5px;
+}
+
+.main-movie {
+    font-size: 16px;
+    height: 500px;
+
+    background: linear-gradient(var(--black-alpha), var(--black-alpha) 100%);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-movie .title {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.buttons .button {
+    background-color: var(--black-alpha);
+    border: none;
+    color: var(--white);
+
+    font-size: 12px;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.buttons .button:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.button .button-items {
+    display: flex;
+    align-items: center;
+}
+
+.button i {
+    margin-right: 8px;
+    font-size: 21px;
+}
+
+.movie-carousel {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.carousel-title {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.movie-box {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    .button {
+        margin-top: 10px;
+        width: 165px;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .movie-carousel {
+        margin-left: 0px;
+    }
+
+    .carousel-title {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .movie-box {
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .main-movie {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .main-movie {
+        height: 600px;
+    }
+
+    .main-movie .container {
+        width: 85%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:285px) {
+    header .container {
+        margin-left: 0;
+    }
+
+    header .logo {
+        font-size: 30px;
+    }
+
+    header nav {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .main-movie {
+        height: 780px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .description {
+        width: 50%;
+    }
+}
