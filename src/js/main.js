@@ -74,7 +74,7 @@ $(document).ready(async () => {
 
         $('#title').text(movie.title);
         $('#description').text(movie.description);
-        $('#main-movie').css('backgroundImage', `url('/src/img/banners/${e.target.id}.jpg')`);
+        $('#main-movie').css('backgroundImage', `url('src/img/banners/${e.target.id}.jpg')`);
 
         videoLink = movie.video;
         infoLink = movie.info;
